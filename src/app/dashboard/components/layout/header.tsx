@@ -3,6 +3,7 @@ import {cn} from "@/lib/utils";
 import {MobileSidebar} from "@/app/dashboard/components/layout/mobile-sidebar";
 import Link from "next/link";
 import {Boxes} from "lucide-react";
+import {UserNav} from "@/app/dashboard/components/layout/user-nav";
 
 export default function Header() {
 
@@ -22,8 +23,10 @@ export default function Header() {
 
                 <div className="flex items-center gap-2">
                     <ThemeToggle />
+                    <UserNav />
+
                     {/*{sessionData?.user ? (
-                        <UserNav user={sessionData.user} />
+                        <UserNav2 user={sessionData.user} />
                     ) : (
                         <Button size="sm"
                             onClick={() => {
